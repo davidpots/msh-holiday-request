@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: Request a holiday-themed post from Main Street Hub
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Have something you'd like us to promote for the holidays on your social media pages? Let us know! Your Main Street Hub team is happy to create any custom posts that inform your followers about hour updates, special promotions, or any products you would like to highlight.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
