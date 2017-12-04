@@ -93,14 +93,18 @@
   margin-bottom: 32px;
 }
 
+.head-text-heading {
+  width: 100%;
+}
+
 body {
     font-family: "proximanova-softregular", "HelveticaNeue", sans-serif;
     font-weight: normal;
     color: #333333;
-    line-height: 1.5;
+    line-height: 1.4;
     margin: 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Typography */
@@ -123,37 +127,60 @@ body {
       display: inline-block;
       background: #FF685B;
       border-radius: 5px;
-      padding: 12px 18px;
+      padding: 13px 18px 10px;
       border: none;
       color: white;
       transition: background-color 0.25s ease;
+      position: relative;
     }
     .button:hover {
       background-color: #F43D2D;
       transition: background-color 0.25s ease;
     }
+    .button:active {
+      top: 1px;
+    }
 
 /* Video wrapper */
 
     .video-wrapper {
-      margin: 16px 0 32px 0;
-      max-width: 100%;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      margin-bottom: 24px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 32px auto;
+  padding: 16px;
+}
+
+.placeholder-post-section {
+  margin: 0 0 96px 0;
 }
 
 .placeholder-post-wrapper {
-  margin: 12px 0;
+  margin: 18px 0;
 }
 .placeholder-post {
-  background: #ddd;
-  width: 240px;
   height: 240px;
+  width: 240px;
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
+}
+
+.placeholder-post img {
+  display: block;
+  width: 100%;
 }
 
 // .subheading {
@@ -175,13 +202,17 @@ strong, .strong, .bold {
     font-weight: normal;
     // text-transform: lowercase;
     color: #FF685B;
+    line-height: 0.9;
 }
 
-.subhead {
+h2,h3 {
   font-family: "proximanova-softsemibold", "HelveticaNeue-Medium", sans-serif;
   font-weight: normal;
+  line-height: 1.1;
 }
 
+h3 { color: #FF685B; }
+
 h1 { font-size: 400%; }
-h2 { font-size: 200%; }
-// h3 { font-size: }
+h2 { font-size: 200%; margin-bottom: 18px; }
+h3 { font-size: 175%; }
