@@ -2,4 +2,186 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+// @import "minima";
+
+@font-face {
+    font-family: "handelsonthree";
+    src: url("/assets/fonts/handelson-three-webfont.eot");
+    src: url("/assets/fonts/handelson-three-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/handelson-three-webfont.woff2") format("woff2"), url("/assets/fonts/handelson-three-webfont.woff") format("woff"), url("/assets/fonts/handelson-three-webfont.ttf") format("truetype"), url("/assets/fonts/handelson-three-webfont.svg#handelsonthree") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova-softregular";
+    src: url("/assets/fonts/proximasoft-regular-webfont.eot");
+    src: url("/assets/fonts/proximasoft-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/proximasoft-regular-webfont.woff2") format("woff2"), url("/assets/fonts/proximasoft-regular-webfont.woff") format("woff"), url("/assets/fonts/proximasoft-regular-webfont.ttf") format("truetype"), url("/assets/fonts/proximasoft-regular-webfont.svg#proximanova-softregular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "proximanova-softsemibold";
+    src: url("/assets/fonts/proximasoft-semibold-webfont.eot");
+    src: url("/assets/fonts/proximasoft-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/proximasoft-semibold-webfont.woff2") format("woff2"), url("/assets/fonts/proximasoft-semibold-webfont.woff") format("woff"), url("/assets/fonts/proximasoft-semibold-webfont.ttf") format("truetype"), url("/assets/fonts/proximasoft-semibold-webfont.svg#proximanova-softsemibold") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+
+
+/* RESET */
+    body,
+    p,
+    blockquote,
+    pre,
+    hr,
+    dl,
+    dd,
+    ol,
+    ul,
+    figure {
+        margin: 0;
+        padding: 0
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        margin: 0
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+        display: block
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box
+    }
+
+    html {
+        font-size: 100%;
+        background-color: #fff
+    }
+
+/* MSH Logo */
+
+.head-msh-logo {
+  width: 200px;
+  margin-bottom: 32px;
+}
+
+body {
+    font-family: "proximanova-softregular", "HelveticaNeue", sans-serif;
+    font-weight: normal;
+    color: #333333;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Typography */
+
+    p {
+      margin: 0 0 16px 0;
+    }
+
+    a {
+      color: #4A90E2;
+      font-family: "proximanova-softsemibold", "HelveticaNeue-Medium", sans-serif;
+      font-weight: normal;
+      text-decoration: none;
+      border-bottom: 1px solid #4A90E2;
+    }
+
+/* Button styles */
+
+    .button {
+      display: inline-block;
+      background: #FF685B;
+      border-radius: 5px;
+      padding: 12px 18px;
+      border: none;
+      color: white;
+      transition: background-color 0.25s ease;
+    }
+    .button:hover {
+      background-color: #F43D2D;
+      transition: background-color 0.25s ease;
+    }
+
+/* Video wrapper */
+
+    .video-wrapper {
+      margin: 16px 0 32px 0;
+      max-width: 100%;
+    }
+
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+}
+
+.placeholder-post-wrapper {
+  margin: 12px 0;
+}
+.placeholder-post {
+  background: #ddd;
+  width: 240px;
+  height: 240px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+// .subheading {
+//     font-family: "proximanova-softsemibold", "HelveticaNeue-Medium", sans-serif;
+//     font-weight: normal;
+//     font-size: .75em;
+//     line-height: 2;
+//     letter-spacing: .0625rem;
+//     text-transform: uppercase
+// }
+
+strong, .strong, .bold {
+  font-family: "proximanova-softsemibold", "HelveticaNeue-Medium", sans-serif;
+  font-weight: normal;
+}
+
+.scripty {
+    font-family: "handelsonthree", "SnellRoundhand", cursive;
+    font-weight: normal;
+    // text-transform: lowercase;
+    color: #FF685B;
+}
+
+.subhead {
+  font-family: "proximanova-softsemibold", "HelveticaNeue-Medium", sans-serif;
+  font-weight: normal;
+}
+
+h1 { font-size: 400%; }
+h2 { font-size: 200%; }
+// h3 { font-size: }
